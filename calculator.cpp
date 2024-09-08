@@ -35,7 +35,14 @@ int main()
         cout << n1 - n2 << endl;
         break;
     case '/':
-        cout << n1 / n2 << endl;
+        if (!n2 == 0)
+        {
+            cout << n1 / n2 << endl;
+        }
+        else
+        {
+            cout << "Cannot divide by 0! " << endl;
+        }
         break;
     case '*':
     case 'x':
